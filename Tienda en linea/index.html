@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/37a7d1d6c8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Julian Millan | VENTAS</title>
+    <link rel="icon" href="img/logo1.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="menu container">
+            <a href="index.html"><img src="img/logo1.png" id="logo" alt=""></a>
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <i class="fa-solid fa-cart-shopping" style="cursor: pointer;" id="img-carrito"></i>
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th>Cantidad</th>
+                                        <th>subtotal</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <div id="total-container">
+                                <p>Total: <span id="total">0</span></p>
+                            </div>
+                            <a href="pagos.html" id="Pagar" class="btn-3">Pagar</a>
+                            <div id="mensaje" style="display: none;"></div>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <section class="seccion-1">
+        <section class="promos container" id="lista-1">
+            <h2>PRODUCTOS</h2>
+            <div class="categories">
+                <div class="categorie">
+                    <div class="categorie-1">
+                        <h3 >Juguete 1</h3>
+                        <div class="prices">
+                            <p class="precio">$149.999</p>
+                        </div>
+                        <div class="quantity">
+                            <button class="subtract">-</button>
+                            <input type="text" class="quantity-input" value="1">
+                            <button class="add">+</button>
+                        </div>
+                        <a href="#" class="agregar-carrito btn-3" data-id="1"style="color: white; transform: translateX(10px);">Agregar al Carrito</a>
+                    </div>
+                    <div class="categorie-img">
+                        <img src="img/juguete1.png" alt="">
+                    </div>
+                </div>
+
+                <div class="categorie">
+                    <div class="categorie-1">
+                        <h3>Juguete 2</h3>
+                        <div class="prices">
+                            <p class="precio">$49.999</p>
+                        </div>
+                        <div class="quantity">
+                            <button class="subtract">-</button>
+                            <input type="text" class="quantity-input" value="1">
+                            <button class="add">+</button>
+                        </div>
+                        <a href="#" class="agregar-carrito btn-3" data-id="2"style="color: white; transform: translateX(10px);">Agregar al Carrito</a>
+                    </div>
+                    <div class="categorie-img">
+                        <img src="img/juguete2.png" alt="">
+                    </div>
+                </div>
+
+                <div class="categorie">
+                    <div class="categorie-1">
+                        <h3>Juguete 3</h3>
+                        <div class="prices">
+                            <p class="precio">$24.999</p>
+                        </div>
+                        <div class="quantity">
+                            <button class="subtract">-</button>
+                            <input type="text" class="quantity-input" value="1">
+                            <button class="add">+</button>
+                        </div>
+                        <a href="#" class="agregar-carrito btn-3" data-id="3"style="color: white; transform: translateX(10px);">Agregar al Carrito</a>
+                    </div>
+                    <div class="categorie-img">
+                        <img src="img/juguete3.png" alt="">
+                    </div>
+                </div>
+
+                <div class="categorie">
+                    <div class="categorie-1">
+                        <h3>Juguete 4</h3>
+                        <div class="prices">
+                            <p class="precio">$249.999</p>
+                        </div>
+                        <div class="quantity">
+                            <button class="subtract">-</button>
+                            <input type="text" class="quantity-input" value="1">
+                            <button class="add">+</button>
+                        </div>
+                        <a href="#" class="agregar-carrito btn-3" data-id="4" style="color: white; transform: translateX(10px);" >Agregar al Carrito</a>
+                    </div>
+                    <div class="categorie-img">
+                        <img src="img/juguete4.png" alt="">
+                    </div>
+                </div>
+                <div class="categorie">
+                    <div class="categorie-1">
+                        <h3 >Juguete 5</h3>
+                        <div class="prices">
+                            <p class="precio">$149.999</p>
+                        </div>
+                        <div class="quantity">
+                            <button class="subtract">-</button>
+                            <input type="text" class="quantity-input" value="1">
+                            <button class="add">+</button>
+                        </div>
+                        <a href="#" class="agregar-carrito btn-3" data-id="1"style="color: white; transform: translateX(10px);">Agregar al Carrito</a>
+                    </div>
+                    <div class="categorie-img">
+                        <img src="img/juguete6.png" alt="">
+                    </div>
+                </div>
+                <div class="categorie">
+                    <div class="categorie-1">
+                        <h3 >Juguete 6</h3>
+                        <div class="prices">
+                            <p class="precio">$149.999</p>
+                        </div>
+                        <div class="quantity">
+                            <button class="subtract">-</button>
+                            <input type="text" class="quantity-input" value="1">
+                            <button class="add">+</button>
+                        </div>
+                        <a href="#" class="agregar-carrito btn-3" data-id="1"style="color: white; transform: translateX(10px);">Agregar al Carrito</a>
+                    </div>
+                    <div class="categorie-img">
+                        <img src="img/juguete14.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const categories = document.querySelectorAll(".categorie");
+                categories.forEach(category => {
+                    const quantityInput = category.querySelector(".quantity-input");
+                    const subtractButton = category.querySelector(".subtract");
+                    const addButton = category.querySelector(".add");
+
+                    subtractButton.addEventListener("click", () => {
+                        let quantity = parseInt(quantityInput.value);
+                        if (quantity > 1) {
+                            quantityInput.value = quantity - 1;
+                        }
+                    });
+
+                    addButton.addEventListener("click", () => {
+                        let quantity = parseInt(quantityInput.value);
+                        quantityInput.value = quantity + 1;
+                    });
+                });
+            });
+        </script>
+
+    </section>
+<hr>
+    <footer class="footer container">
+            <h6 style="transform: translateX(400px);">© 2024 Julian Millan. Todos los derechos reservados.</h6>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

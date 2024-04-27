@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julian Millan | PAGO</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="icon" href="img/logo1.ico">
+    <script src="https://kit.fontawesome.com/37a7d1d6c8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/pagos.css">
+
+</head>
+
+<body>
+    
+    <header class="header">
+        <div class="menu container">
+            <a href="index.html"><img class="logo-1" src="img/logo1.png" alt=" " style="width: 100px; transform: translate(-230px,-20px);" ></a>
+            <nav class="navbar">
+                <h1>Formulario de pagos</h1>
+                <ul style="transform: translateX(200px);">
+                    <li><a style="text-decoration: none; transform: translateX(500px);" href="index.html"> <i class="fa-solid fa-shop" ></i> Seguir Comprando</a></li>
+                </ul>
+
+            </nav>
+    </header>
+    <form action="index.html" class="formulario">
+
+        <label for="" class="label">Nombres</label>
+        <input type="text">
+        <label for="" class="label">Apellidos</label>
+        <input type="text">
+        <label for="" class="label">Correo Electronico</label>
+        <input type="email">
+        <label for="" class="label">Metodo de pago</label>
+        <select name="select" id="select" style="background-color:transparent; ;color:white;">
+            <option value="1" style="color: black;">Nequi</option>
+            <option value="2" style="color: black;">Tarjeta</option>
+            <option value="3" style="color: black;">Efectivo</option>
+        </select>
+        <label for="telefonoField" class="label" id="telefonoLabel" style="display:none;">Teléfono</label>
+        <input type="number" id="telefonoField" name="telefono" style="display:none;">
+        <label for="cuentaField" class="label" id="cuentaLabel" style="display:none;">Número de Cuenta</label>
+        <input type="text" id="cuentaField" name="cuenta" style="display:none;">
+        <button type="submit" class="btn btn-primary" style="background-color: transparent; color: white; border-color: #11eeee;">Aceptar Pago</button>
+    </form>
+    <script>
+        const select = document.getElementById('select');
+        const telefonoLabel = document.getElementById('telefonoLabel');
+        const telefonoField = document.getElementById('telefonoField');
+        const cuentaLabel = document.getElementById('cuentaLabel');
+        const cuentaField = document.getElementById('cuentaField');
+
+        select.addEventListener('change', function() {
+            const selectedOption = parseInt(select.value);
+
+            // Ocultar todos los campos adicionales
+            telefonoLabel.style.display = 'none';
+            telefonoField.style.display = 'none';
+            cuentaLabel.style.display = 'none';
+            cuentaField.style.display = 'none';
+
+            // Mostrar campos adicionales según el método de pago seleccionado
+            if (selectedOption === 1) { // Nequi
+                telefonoLabel.style.display = 'block';
+                telefonoField.style.display = 'block';
+            } else if (selectedOption === 2) { // Tarjeta
+                cuentaLabel.style.display = 'block';
+                cuentaField.style.display = 'block';
+            }
+            // Para Efectivo no necesitas hacer nada ya que no hay campos adicionales
+        });
+    </script>
+    
+    
+    
+    <footer class="footer-container" style="padding: 0; height: 25vh;">
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+
+
+</html>

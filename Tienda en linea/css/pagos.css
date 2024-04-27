@@ -1,0 +1,98 @@
+/* Estilos para el formulario de pagos */
+body {
+    background-color: #000000; /* Color de fondo */
+    color: white; /* Color de texto */
+}
+
+
+.formulario h1{
+    text-align: center;
+}
+
+.container {
+    max-width: 800px; /* Ancho máximo */
+    margin: 0 auto; /* Centrar horizontalmente */
+    padding: 20px; /* Espaciado interno */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.formulario {
+    background-color: #0f0e17; /* Color de fondo del formulario */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Borde redondeado */
+    margin-top: 50px; /* Espacio superior */
+}
+
+.formulario h1 {
+    font-size: 24px; /* Tamaño de fuente del título */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.formulario .label {
+    display: block; /* Hacer que las etiquetas ocupen una línea completa */
+    margin-bottom: 10px; /* Espaciado inferior */
+}
+
+.formulario input[type="text"],
+.formulario input[type="number"],
+.formulario input[type="email"],
+.formulario select {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 20px; /* Espaciado inferior */
+    border-radius: 5px; /* Borde redondeado */
+    border: 1px solid #11eeee; /* Borde */
+    background-color: transparent; /* Fondo transparente */
+    color: white; /* Color de texto */
+}
+
+/* Estilos para los campos adicionales según el método de pago */
+#telefonoField,
+#cuentaLabel,
+#cuentaField {
+    display: none; /* Inicialmente oculto */
+}
+
+/* Estilos para el botón */
+.formulario .btn-submit {
+    display: inline-block; /* Hacer que el botón ocupe solo el ancho necesario */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Borde redondeado */
+    background-color: #3da9fc; /* Color de fondo */
+    color: white; /* Color de texto */
+    cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+}
+
+.formulario .btn-submit:hover {
+    background-color: #ffffff; /* Color de fondo al pasar el ratón */
+    color: #0f0e17; /* Color de texto al pasar el ratón */
+}

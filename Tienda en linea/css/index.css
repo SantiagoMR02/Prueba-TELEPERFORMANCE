@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-color: #000000;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+
+    
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    
+}
+
+.submenu{
+    position: relative;
+    cursor: pointer;
+
+}
+
+.submenu #img-carrito{
+    width: 80px;
+    font-size: 30px;
+    padding: 15px 25px;
+    color: #11eeee;
+    border-radius: 50px;
+}
+
+.submenu #img-carrito:hover{
+    color: #ffffff;
+}
+
+
+.submenu #carrito{
+    display: none;
+}
+
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(25px );
+    top: 100%;
+    z-index: 1;
+    background-color: transparent;
+    padding: 20px;
+    min-width: 500px;
+    transition: .10s;
+    border-radius: 15px;
+    border-bottom: 1px solid #11eeee;
+    border-left: 1px solid #11eeee;
+    border-right: 1px solid #11eeee;
+    border-top: 1px solid #11eeee;
+    text-decoration: none;
+}
+
+#carrito {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-right: 100px; /* Ajustamos el padding derecho para dejar espacio al valor total */
+}
+
+#total-container {
+    position: absolute;
+    right: 0;
+    top: 10; /* Ajustamos la posición superior para alinear el valor total correctamente */
+    color: white;
+    margin-top: 22px; /* Ajustamos el margen superior */
+    margin-right: 150px; /* Ajustamos el margen derecho */
+}
+
+#lista-carrito {
+    flex: 1; /* Hacemos que la tabla ocupe todo el espacio disponible */
+}
+
+#carrito a {
+    margin-left: 10px; /* Añadimos un margen entre los botones */
+    color: white; /* Aplicamos color de texto blanco */
+
+}
+
+#vaciar-carrito {
+    background-color: transparent;
+    color: white; /* Aplicamos color de texto blanco */
+    border-color: #11eeee;
+    margin-right: 250px; /* Añadimos margen derecho para separarlo del botón "Pagar" */
+}
+
+#Pagar {
+    border-color: #11eeee;
+    color: white; /* Aplicamos color de texto blanco */
+}
+#Pagar :hover{
+    background-color: transparent;
+}
+
+#lista-carrito td:nth-child(4) {
+    text-align: center;
+}
+
+.quantity {
+    display: flex; /* Para que los elementos internos se alineen horizontalmente */
+    align-items: center; /* Para centrar verticalmente los elementos internos */
+}
+
+.subtract,
+.add {
+    background-color: transparent; /* Color de fondo */ 
+    border: 1px solid #11eeee;/* Eliminar bordes */
+    padding: 5px 10px; /* Espaciado interno */
+    cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+    border-radius: 5px;
+    color: white;
+    outline: none; /* Eliminar contorno al hacer clic */
+}
+
+.quantity-input {
+    width: 40px; /* Ancho del campo de entrada */
+    margin: 0 30px; /* Margen entre los botones y el campo de entrada */
+    text-align: center; /* Centrar el texto en el campo de entrada */
+    border-radius: 10px;
+    border: 1px solid #11eeee; /* Añadir un borde al campo de entrada */
+    color: white;
+    background-color: transparent;
+}
+
+table{
+    width: 100%;
+}
+
+th, td{
+    color: white;
+}
+
+
+.borrar{
+    background-color: #11eeee;
+    border-radius: 50%;
+    padding: 5px 10px;
+    color: #3da9fc;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+#logo {
+    width: 100px;
+}
+
+.prices{
+    display: flex;
+    margin: 20px 0;
+    color: white;
+}
+
+.btn-1{
+    display: inline-block;
+    background-color: #3da9fc;
+    color: #ffff;
+    font-size: 16px;
+    padding: 10px 25px;
+    border-radius: 25px;
+    margin-top: 40px;
+}
+
+.btn-1:hover{
+    background-color: #ffffff;
+    text-decoration: none;
+    color: #0f0e17;
+}
+
+
+.promos{
+    padding: 50px 0;
+    text-align: center;
+}
+
+.promos h2{
+    font-size: 50px;
+    color: #11eeee;
+    margin-bottom: 35px;
+}
+
+.categories{
+    transform: translateX(70px);
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.categorie{
+    display: flex;
+    align-items: center;
+    padding: 35px;
+}
+
+.categorie img{
+    width: 150px;
+}
+
+.categorie-1{
+    width: 50%;
+}
+
+.categorie-1 h3{
+    color: #11eeee;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.categorie-1 p{
+    color: #11eeee;
+    font-size: 18px;
+}
+
+.categorie-img{
+    width: 4%;
+}
+
+
+.precio{
+    color: #11eeee !important;
+}
+
+.btn-3{
+    display: inline-block;
+    padding: 7px 10px;
+    font-size: 14px;
+    border: 1px solid #11eeee;
+    border-radius: 25px;
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+.btn-3:hover{
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.footer {
+    display: flex;
+    padding: 30px 0;
+    color: white;
+    text-align: center;
+}
+
+@media(max-width:991px){
+   
+
+    #logo{
+        display: none;
+    }
+    
+    .submenu:hover #carrito{
+        min-width: 100%;
+    }
+
+    .mySwiper-1{
+        width: 300px;
+    }
+
+    .swiper-slide{
+        padding: 0 30px 50px 30px;
+    }
+
+    .header-content{
+        padding: 100px 0 50px 0;
+    }
+
+    .header-info{
+        padding: 0;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-txt{
+        width: 100%;
+    }
+
+    .header-txt h1{
+        font-size: 40px;
+    }
+
+    .header-img{
+        width: 100%;
+    }
+
+    .header-img img{
+        width: 200px;
+    }
+
+    .prices{
+        flex-direction: column;
+    }
+
+    .price-1{
+        margin: 0;
+    }
+
+    .btn-1{
+        margin: 20px 0;
+    }
+
+    .promos{
+        padding: 30px;
+    }
+
+    .promos h2{
+        font-size: 40px;
+        margin-bottom: 0;
+    }
+
+    .categories{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .categorie{
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .categorie-1{
+        width: 100%;
+        margin-bottom: 25px;
+        border: -1;
+    }
+
+    .categorie-img{
+        width: 100%;
+    }
+
+    .products{
+        padding: 30px;
+    }
+
+    .products h2{
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+
+}
+
